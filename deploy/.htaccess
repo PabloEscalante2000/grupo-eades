@@ -1,7 +1,2 @@
-Options -Indexes
-DirectoryIndex index.html
-
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteRule ^ index.html [L]
-</IfModule>
+RewriteEngine On
+Redirect 301 / https://eadespsicoterapia.com/
