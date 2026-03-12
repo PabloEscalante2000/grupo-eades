@@ -1,0 +1,68 @@
+[
+  {
+    "nombre": "César Escalante",
+    "img_url": "/cesar_new-min.webp",
+    "obj_pos": "center 35%",
+    "cpp": "CPsP: 29611",
+    "rol":"Co-fundador y CEO",
+    "datos": [
+      "Psicólogo clínico con Maestría en Neuropsicología",
+      "Psicoterapeuta psicoanalítico con expertiz en transtorno de la personalidad, depresión y ansiedad",
+      "Formación en Terapia Sistemática Familiar",
+      "Docente universitario y asesor en temas de investigacion clínica"
+    ]
+  },
+  {
+    "nombre": "Valeria Arbulú",
+    "img_url": "/valeria.jpeg",
+    "obj_pos": "center 15%",
+    "cpp":"",
+    "rol":"Co-fundador y CEO",
+    "datos": [
+      "Facilitadora Psicoterapéutica Psicoanalítica.",
+      "Docente de teoría psicoanalítica en Grupo EADES."
+    ]
+  },
+  {
+    "nombre": "Melissa Alejandra Huaman Sánchez",
+    "img_url": "/melissa_new.webp",
+    "obj_pos": "center 15%",
+    "datos": [
+      "Facilitadora Psicoterapéutica Psicoanalítica.",
+      "Docente en teoría psicoanalítica en Grupo EADES."
+    ]
+  },
+  {
+    "nombre": "Catherin Cermeño Durand",
+    "img_url": "/catherin_eades.jpg",
+    "obj_pos": "center 15%",
+    "cpp": "CPsP:35863",
+    "datos": [
+      "Psicóloga clínica y psicoterapeuta psicoanalítica",
+      "Participación en proyectos de salud mental e intervención en contextos comunitarios con poblaciones vulnerables."
+    ]
+  },
+  {
+    "nombre": "Natalia Escalante",
+    "img_url": "/assets/natalia_pseres.jpeg",
+    "obj_pos": "center 15%",
+    "cpp": "",
+    "datos": [
+      "Especialista en terapia de aprendizaje a niños neurodiversos.",
+      "Ponente sobre temas educativos, neurodiversidad y aprendizaje",
+      "Maestria en educación con mención en dificultades de aprendizaje",
+      "Docente de niños neurodiversos"
+    ]
+  },
+  {
+    "nombre": "Kevin Cubas",
+    "img_url": "/kevin_cubas.jpg",
+    "obj_pos": "center 15%",
+    "cpp": "CPsP:66725",
+    "datos": [
+      "Psicólogo Clínico.",
+      "Bases en la terapia cognitivo conductual.",
+      "Cursos de especialización en técnicas de entrevista, diagnóstico, intervención y tratamiento en psicología de adultos, así como en niños y adolescentes con TEA"
+    ]
+  }
+]
