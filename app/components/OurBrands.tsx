@@ -88,86 +88,19 @@ export default function OurBrands() {
           >
             {/* Visual / image side */}
             <div
-              className="lg:w-1/2 min-h-[360px] lg:min-h-[500px] relative flex items-center justify-center overflow-hidden"
+              className="lg:w-1/2 min-h-[360px] lg:min-h-[500px] overflow-hidden"
               style={
                 brand.bgImage
                   ? {
-                      background: `linear-gradient(135deg, ${brand.overlayColors[0]}, ${brand.overlayColors[1]}), url('${brand.bgImage}') center center / cover no-repeat`,
+                      backgroundImage: `url('${brand.bgImage}')`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
                     }
                   : {
                       background: `linear-gradient(135deg, ${brand.fallback.from} 0%, ${brand.fallback.to} 100%)`,
                     }
               }
-            >
-              {/* Subtle dot pattern overlay */}
-              <div
-                className="absolute inset-0 opacity-[0.06] pointer-events-none"
-                style={{
-                  backgroundImage:
-                    "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-                  backgroundSize: "24px 24px",
-                }}
-              />
-
-              {/* Glow accent */}
-              <div
-                className="absolute pointer-events-none"
-                style={{
-                  bottom: "-60px",
-                  right: "-60px",
-                  width: 280,
-                  height: 280,
-                  borderRadius: "50%",
-                  background:
-                    "radial-gradient(circle, rgba(176,196,223,0.18) 0%, transparent 70%)",
-                }}
-              />
-
-              {/* Brand name watermark */}
-              <span
-                className="absolute font-extrabold uppercase select-none pointer-events-none whitespace-nowrap"
-                style={{
-                  fontSize: "clamp(3.5rem, 10vw, 8rem)",
-                  color: "rgba(255,255,255,0.06)",
-                  letterSpacing: "0.08em",
-                  bottom: "1rem",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                }}
-              >
-                {brand.name}
-              </span>
-
-              {/* Center logo on visual side */}
-              <div className="relative z-10 flex flex-col items-center gap-4 p-10">
-                <div
-                  className="rounded-2xl flex items-center justify-center p-4"
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.12)",
-                    backdropFilter: "blur(8px)",
-                    border: "1px solid rgba(255,255,255,0.2)",
-                    minWidth: 120,
-                    minHeight: 80,
-                  }}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={brand.logo}
-                    alt={`Logo ${brand.name}`}
-                    className="max-h-14 max-w-[160px] w-auto object-contain"
-                    style={{ filter: "brightness(0) invert(1)" }}
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
-                  />
-                </div>
-                <p
-                  className="text-white/70 text-xs font-semibold uppercase tracking-[0.18em] text-center max-w-[200px]"
-                >
-                  {brand.tagline}
-                </p>
-              </div>
-            </div>
+            />
 
             {/* Content side */}
             <div
@@ -176,7 +109,7 @@ export default function OurBrands() {
             >
               <div className="px-10 py-14 lg:px-16 max-w-xl w-full">
                 {/* Logo in content area (colored version) */}
-                <div className="mb-7 h-14 flex items-start">
+                <div className="mb-7 h-20 flex items-start">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={brand.logo}

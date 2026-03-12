@@ -55,18 +55,13 @@ export default function WorkWithInstitutions() {
             >
               {/* Image area */}
               <div
-                className="h-48 relative overflow-hidden"
+                className="h-64 overflow-hidden"
                 style={{
                   backgroundImage: `url('${card.image}')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-              >
-                <div
-                  className="absolute inset-0"
-                  style={{ backgroundColor: card.overlay }}
-                />
-              </div>
+              />
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1 bg-white">

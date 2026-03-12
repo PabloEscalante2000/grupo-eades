@@ -1,7 +1,7 @@
 [
   {
     "nombre": "César Escalante",
-    "img_url": "/cesar_new-min.webp",
+    "img_url": "img/cesar_new-min.webp",
     "obj_pos": "center 35%",
     "cpp": "CPsP: 29611",
     "rol":"Co-fundador y CEO",
@@ -14,7 +14,7 @@
   },
   {
     "nombre": "Valeria Arbulú",
-    "img_url": "/valeria.jpeg",
+    "img_url": "img/valeria.jpeg",
     "obj_pos": "center 15%",
     "cpp":"",
     "rol":"Co-fundador y CEO",
@@ -25,8 +25,10 @@
   },
   {
     "nombre": "Melissa Alejandra Huaman Sánchez",
-    "img_url": "/melissa_new.webp",
+    "img_url": "img/melissa_new.webp",
     "obj_pos": "center 15%",
+    "cpp":"",
+    "rol":"Coordinadora General",
     "datos": [
       "Facilitadora Psicoterapéutica Psicoanalítica.",
       "Docente en teoría psicoanalítica en Grupo EADES."
@@ -34,9 +36,10 @@
   },
   {
     "nombre": "Catherin Cermeño Durand",
-    "img_url": "/catherin_eades.jpg",
+    "img_url": "img/catherin_eades.jpg",
     "obj_pos": "center 15%",
     "cpp": "CPsP:35863",
+    "rol":"Coordinadora de Proyectos en Salud Mental",
     "datos": [
       "Psicóloga clínica y psicoterapeuta psicoanalítica",
       "Participación en proyectos de salud mental e intervención en contextos comunitarios con poblaciones vulnerables."
@@ -44,9 +47,10 @@
   },
   {
     "nombre": "Natalia Escalante",
-    "img_url": "/assets/natalia_pseres.jpeg",
+    "img_url": "img/natalia_pseres.jpeg",
     "obj_pos": "center 15%",
     "cpp": "",
+    "rol":"Docente y Mag. En Problemáticas del Aprendizaje",
     "datos": [
       "Especialista en terapia de aprendizaje a niños neurodiversos.",
       "Ponente sobre temas educativos, neurodiversidad y aprendizaje",
@@ -56,9 +60,10 @@
   },
   {
     "nombre": "Kevin Cubas",
-    "img_url": "/kevin_cubas.jpg",
+    "img_url": "img/kevin_cubas.jpg",
     "obj_pos": "center 15%",
     "cpp": "CPsP:66725",
+    "rol":"Psicólogo Clínico",
     "datos": [
       "Psicólogo Clínico.",
       "Bases en la terapia cognitivo conductual.",

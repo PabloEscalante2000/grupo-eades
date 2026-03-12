@@ -9,6 +9,7 @@ const nav = [
   { label: "Inicio", href: "#inicio" },
   { label: "¿Qué Hacemos?", href: "#que-hacemos" },
   { label: "Nuestras Marcas", href: "#nuestras-marcas" },
+  { label: "Nuestro Equipo", href: "#nuestro-equipo" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -107,7 +108,16 @@ export default function Footer() {
             © {new Date().getFullYear()} Grupo EADES. Todos los derechos
             reservados.
           </p>
-          <p className="text-white/30 text-xs">Lima, Perú</p>
+          <div className="flex items-center gap-4">
+            <a
+              href="/politica-de-privacidad/"
+              className="text-white/30 text-xs hover:text-white/60 transition-colors"
+            >
+              Política de Privacidad
+            </a>
+            <span className="text-white/20 text-xs">·</span>
+            <p className="text-white/30 text-xs">Lima, Perú</p>
+          </div>
         </div>
       </div>
     </footer>

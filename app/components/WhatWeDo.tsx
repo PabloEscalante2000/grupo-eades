@@ -13,7 +13,7 @@ const cards = [
       "Para niños, adolescentes, jóvenes y adultos. Acompañamiento clínico especializado orientado al desarrollo del bienestar emocional y la salud mental integral.",
   },
   {
-    image: "https://institutoitas.com/assets/itas_teoria.png",
+    image: "/img/form_educacion.jpeg",
     overlay: "rgba(42,74,104,0.62)",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,19 +87,13 @@ export default function WhatWeDo() {
             >
               {/* Image area */}
               <div
-                className="h-48 relative overflow-hidden"
+                className="h-64 overflow-hidden"
                 style={{
                   backgroundImage: `url('${card.image}')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-              >
-                {/* Color overlay */}
-                <div
-                  className="absolute inset-0"
-                  style={{ backgroundColor: card.overlay }}
-                />
-              </div>
+              />
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1 bg-white">

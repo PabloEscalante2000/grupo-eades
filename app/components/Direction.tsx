@@ -20,13 +20,19 @@ export default function Direction() {
 
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-center gap-14 lg:gap-20 max-w-5xl mx-auto">
-          {/* Photo */}
-          <div className="flex-shrink-0">
+          {/* Photo + name above */}
+          <div className="flex-shrink-0 flex flex-col items-center gap-5">
+            <h3
+              className="text-2xl lg:text-3xl font-bold text-center leading-tight"
+              style={{ color: "#1a2f5e" }}
+            >
+              César Escalante
+            </h3>
             <div
               className="overflow-hidden"
               style={{
-                width: 280,
-                height: 340,
+                width: 340,
+                height: 420,
                 boxShadow: "0 20px 60px rgba(26,47,94,0.18)",
               }}
             >
@@ -41,12 +47,6 @@ export default function Direction() {
 
           {/* Text */}
           <div className="flex flex-col items-start">
-            <h3
-              className="text-3xl lg:text-4xl font-bold mb-2 leading-tight"
-              style={{ color: "#1a2f5e" }}
-            >
-              César Escalante
-            </h3>
             <p
               className="text-sm font-bold uppercase tracking-widest mb-6"
               style={{ color: "#41588e" }}
