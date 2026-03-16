@@ -27,23 +27,13 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between py-4">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-3">
-          <div
-            className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-xs font-extrabold tracking-tight"
-            style={{
-              backgroundColor: scrolled ? "#41588e" : "rgba(255,255,255,0.15)",
-              border: "2px solid rgba(255,255,255,0.5)",
-            }}
-          >
-            GE
-          </div>
-          <span
-            className={`font-bold text-base transition-colors ${
-              scrolled ? "text-[#41588e]" : "text-white"
-            }`}
-          >
-            Grupo EADES
-          </span>
+        <a href="#inicio" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={scrolled ? "/img/logo_fondo_claro.png" : "/img/logo_fondo_oscuro.png"}
+            alt="Grupo EADES"
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop nav */}

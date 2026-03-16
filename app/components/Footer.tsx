@@ -21,16 +21,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand column */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-xs font-extrabold"
-                style={{ backgroundColor: "#41588e" }}
-              >
-                GE
-              </div>
-              <span className="font-bold text-white text-base">
-                Grupo EADES
-              </span>
+            <div className="flex items-center mb-5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/img/logo_fondo_oscuro.png"
+                alt="Grupo EADES"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-white/45 text-sm leading-relaxed">
               Conectando práctica clínica, investigación y formación
