@@ -91,7 +91,7 @@ export default function Contact() {
                 </svg>
               ),
               label: "Teléfono",
-              value: "+51 (1) 000-0000",
+              value: "+51 930 509 438",
             },
             {
               icon: (
@@ -140,7 +140,9 @@ export default function Contact() {
 
         {/* CTA button */}
         <a
-          href="mailto:contacto@grupoeades.com"
+          href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..."
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2.5 px-9 py-4 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-xl"
           style={{ backgroundColor: "#b0c4df", color: "#2d3f6b" }}
         >

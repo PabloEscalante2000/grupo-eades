@@ -15,7 +15,7 @@ const brands = [
     imageLeft: true,
   },
   {
-    name: "PSeres",
+    name: "Pseres",
     tagline: "Psicoterapia y psicoeducación para niños y adolescentes",
     description:
       "Psicoterapia y psicoeducación especializada para niños y adolescentes. Acompañamiento clínico centrado en el desarrollo infantil y la salud mental desde las primeras etapas de vida.",

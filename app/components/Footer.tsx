@@ -1,5 +1,5 @@
 const brands = [
-  { name: "PSeres", url: "https://pseres.pe" },
+  { name: "Pseres", url: "https://pseres.pe" },
   { name: "EADES Psicoterapia", url: "https://eadespsicoterapia.com" },
   { name: "Ilumina", url: "https://asociacionilumina.org" },
   { name: "ITAS", url: "https://institutoitas.com" },
