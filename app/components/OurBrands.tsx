@@ -11,7 +11,7 @@ const brands = [
     logo: "https://eadespsicoterapia.com/logo_eades.webp",
     bgImage: "https://eadespsicoterapia.com/assets/bg-3.jpg",
     overlayColors: ["rgba(26,47,94,0.72)", "rgba(65,88,142,0.78)"],
-    fallback: { from: "#1a2f5e", to: "#41588e" },
+    fallback: { from: "#1c2c46", to: "#377782" },
     imageLeft: true,
   },
   {
@@ -24,7 +24,7 @@ const brands = [
     logo: "https://pseres.pe/assets/pseres_logo.png",
     bgImage: "https://pseres.pe/assets/porque_elegir_pseres.jpg",
     overlayColors: ["rgba(20,40,80,0.68)", "rgba(55,78,128,0.74)"],
-    fallback: { from: "#1a2f5e", to: "#374e80" },
+    fallback: { from: "#1c2c46", to: "#377782" },
     imageLeft: false,
   },
   {
@@ -37,7 +37,7 @@ const brands = [
     logo: "/img/itas_icono.png",
     bgImage: "https://institutoitas.com/assets/itas_banner.png",
     overlayColors: ["rgba(22,38,75,0.70)", "rgba(55,78,128,0.76)"],
-    fallback: { from: "#162645", to: "#374e80" },
+    fallback: { from: "#1c2c46", to: "#377782" },
     imageLeft: true,
   },
   {
@@ -50,7 +50,7 @@ const brands = [
     logo: "https://eadespsicoterapia.com/ilumina_logo.png",
     bgImage: "/img/ilumina_fondo.jpg",
     overlayColors: ["rgba(24,50,90,0.80)", "rgba(46,80,128,0.80)"],
-    fallback: { from: "#18325a", to: "#2e5080" },
+    fallback: { from: "#1c2c46", to: "#1b6748" },
     imageLeft: false,
   },
 ];
@@ -62,13 +62,13 @@ export default function OurBrands() {
       <div className="py-20 text-center" style={{ backgroundColor: "#f4f7fb" }}>
         <span
           className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
-          style={{ backgroundColor: "#dde8f5", color: "#41588e" }}
+          style={{ backgroundColor: "#dde8f5", color: "#377782" }}
         >
           Nuestro ecosistema
         </span>
         <h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
-          style={{ color: "#1a2f5e" }}
+          style={{ color: "#1c2c46" }}
         >
           Nuestras Marcas
         </h2>
@@ -125,7 +125,7 @@ export default function OurBrands() {
                   {/* Fallback monogram if logo fails */}
                   <div
                     className="hidden w-14 h-14 rounded-xl items-center justify-center text-white text-sm font-extrabold"
-                    style={{ backgroundColor: "#41588e" }}
+                    style={{ backgroundColor: "#377782" }}
                   >
                     {brand.name.slice(0, 2).toUpperCase()}
                   </div>
@@ -134,7 +134,7 @@ export default function OurBrands() {
                 {/* Tagline */}
                 <p
                   className="text-xs font-bold uppercase tracking-widest mb-3"
-                  style={{ color: "#41588e" }}
+                  style={{ color: "#377782" }}
                 >
                   {brand.tagline}
                 </p>
@@ -142,7 +142,7 @@ export default function OurBrands() {
                 {/* Name */}
                 <h3
                   className="text-3xl lg:text-4xl font-bold mb-5 leading-tight"
-                  style={{ color: "#1a2f5e" }}
+                  style={{ color: "#1c2c46" }}
                 >
                   {brand.name}
                 </h3>
@@ -150,7 +150,7 @@ export default function OurBrands() {
                 {/* Divider */}
                 <div
                   className="w-12 h-1 rounded-full mb-6"
-                  style={{ backgroundColor: "#b0c4df" }}
+                  style={{ backgroundColor: "#1b6748" }}
                 />
 
                 {/* Description */}
@@ -164,7 +164,7 @@ export default function OurBrands() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-md"
-                  style={{ backgroundColor: "#41588e", color: "white" }}
+                  style={{ backgroundColor: "#377782", color: "white" }}
                 >
                   Visitar sitio
                   <svg

@@ -5,7 +5,7 @@ export default function Contact() {
       className="py-24 relative overflow-hidden"
       style={{
         background:
-          "linear-gradient(140deg, #1a2f5e 0%, #41588e 60%, #5272a8 100%)",
+          "linear-gradient(140deg, #1c2c46 0%, #1b6748 50%, #377782 100%)",
       }}
     >
       {/* Dot pattern */}
@@ -23,7 +23,7 @@ export default function Contact() {
         className="absolute right-0 top-0 w-[500px] h-[500px] pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(176,196,223,0.15) 0%, transparent 65%)",
+            "radial-gradient(circle, rgba(55,119,130,0.15) 0%, transparent 65%)",
           transform: "translate(20%, -20%)",
         }}
       />
@@ -33,9 +33,9 @@ export default function Contact() {
         <span
           className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-7"
           style={{
-            backgroundColor: "rgba(176,196,223,0.15)",
-            color: "#b0c4df",
-            border: "1px solid rgba(176,196,223,0.3)",
+            backgroundColor: "rgba(55,119,130,0.15)",
+            color: "#377782",
+            border: "1px solid rgba(55,119,130,0.3)",
           }}
         >
           Ponte en contacto
@@ -126,7 +126,7 @@ export default function Contact() {
             >
               <div
                 className="w-11 h-11 rounded-xl flex items-center justify-center text-white"
-                style={{ backgroundColor: "rgba(176,196,223,0.2)" }}
+                style={{ backgroundColor: "rgba(55,119,130,0.2)" }}
               >
                 {item.icon}
               </div>
@@ -144,7 +144,7 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2.5 px-9 py-4 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-xl"
-          style={{ backgroundColor: "#b0c4df", color: "#2d3f6b" }}
+          style={{ backgroundColor: "#377782", color: "white" }}
         >
           Enviar un mensaje
           <svg

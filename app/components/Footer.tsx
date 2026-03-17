@@ -15,7 +15,7 @@ const nav = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#0f1e3d" }}>
+    <footer style={{ backgroundColor: "#1c2c46" }}>
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
         {/* Top grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
@@ -40,7 +40,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-bold uppercase tracking-widest mb-5"
-              style={{ color: "#b0c4df" }}
+              style={{ color: "#377782" }}
             >
               Navegación
             </h4>
@@ -62,7 +62,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-bold uppercase tracking-widest mb-5"
-              style={{ color: "#b0c4df" }}
+              style={{ color: "#377782" }}
             >
               Nuestras Marcas
             </h4>

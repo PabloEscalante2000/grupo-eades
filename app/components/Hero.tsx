@@ -5,7 +5,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{
         background:
-          "linear-gradient(140deg, #1a2f5e 0%, #2d4a7a 35%, #41588e 70%, #5272a8 100%)",
+          "linear-gradient(140deg, #1c2c46 0%, #1c3540 35%, #377782 70%, #2d6672 100%)",
       }}
     >
       {/* Dot grid pattern */}
@@ -23,7 +23,7 @@ export default function Hero() {
         className="absolute top-0 right-0 w-[700px] h-[700px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(176,196,223,0.18) 0%, transparent 65%)",
+            "radial-gradient(circle, rgba(55,119,130,0.22) 0%, transparent 65%)",
           transform: "translate(30%, -30%)",
         }}
       />
@@ -31,7 +31,7 @@ export default function Hero() {
         className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(176,196,223,0.12) 0%, transparent 65%)",
+            "radial-gradient(circle, rgba(27,103,72,0.18) 0%, transparent 65%)",
           transform: "translate(-30%, 30%)",
         }}
       />
@@ -72,14 +72,14 @@ export default function Hero() {
           <span
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.18em] mb-8"
             style={{
-              backgroundColor: "rgba(176,196,223,0.12)",
-              color: "#b0c4df",
-              border: "1px solid rgba(176,196,223,0.3)",
+              backgroundColor: "rgba(55,119,130,0.15)",
+              color: "#377782",
+              border: "1px solid rgba(55,119,130,0.35)",
             }}
           >
             <span
               className="w-1.5 h-1.5 rounded-full"
-              style={{ backgroundColor: "#b0c4df" }}
+              style={{ backgroundColor: "#377782" }}
             />
             Grupo EADES
           </span>
@@ -87,9 +87,9 @@ export default function Hero() {
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.12] mb-7">
             Salud mental aplicada a{" "}
-            <span style={{ color: "#b0c4df" }}>personas</span>,{" "}
-            <span style={{ color: "#b0c4df" }}>instituciones</span> y{" "}
-            <span style={{ color: "#b0c4df" }}>comunidades</span>
+            <span style={{ color: "#377782" }}>personas</span>,{" "}
+            <span style={{ color: "#377782" }}>instituciones</span> y{" "}
+            <span style={{ color: "#377782" }}>comunidades</span>
           </h1>
 
           {/* Description */}
@@ -104,7 +104,7 @@ export default function Hero() {
             <a
               href="#nuestras-marcas"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: "#b0c4df", color: "#2d3f6b" }}
+              style={{ backgroundColor: "#377782", color: "white" }}
             >
               Explorar nuestras unidades
               <svg

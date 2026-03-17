@@ -18,13 +18,13 @@ export default function OurTeam() {
         <div className="text-center mb-14">
           <span
             className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
-            style={{ backgroundColor: "#eef2f8", color: "#41588e" }}
+            style={{ backgroundColor: "#eef2f8", color: "#377782" }}
           >
             Profesionales
           </span>
           <h2
             className="text-3xl sm:text-4xl lg:text-5xl font-bold"
-            style={{ color: "#1a2f5e" }}
+            style={{ color: "#1c2c46" }}
           >
             Nuestro Equipo
           </h2>
@@ -36,7 +36,7 @@ export default function OurTeam() {
           <button
             onClick={() => scroll("left")}
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 -translate-x-4 w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all hover:scale-105"
-            style={{ backgroundColor: "#1a2f5e", color: "white" }}
+            style={{ backgroundColor: "#1c2c46", color: "white" }}
             aria-label="Anterior"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export default function OurTeam() {
                 <div className="p-5 flex flex-col flex-1 bg-white">
                   <p
                     className="font-bold text-sm leading-snug mb-1"
-                    style={{ color: "#1a2f5e" }}
+                    style={{ color: "#1c2c46" }}
                   >
                     {p.nombre}
                   </p>
@@ -78,7 +78,7 @@ export default function OurTeam() {
                   {p.cpp && (
                     <span
                       className="self-start text-xs font-semibold px-2 py-0.5 rounded-full"
-                      style={{ backgroundColor: "#eef2f8", color: "#41588e" }}
+                      style={{ backgroundColor: "#eef2f8", color: "#377782" }}
                     >
                       {p.cpp}
                     </span>
@@ -92,7 +92,7 @@ export default function OurTeam() {
           <button
             onClick={() => scroll("right")}
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 translate-x-4 w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all hover:scale-105"
-            style={{ backgroundColor: "#1a2f5e", color: "white" }}
+            style={{ backgroundColor: "#1c2c46", color: "white" }}
             aria-label="Siguiente"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

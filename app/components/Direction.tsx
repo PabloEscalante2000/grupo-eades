@@ -6,13 +6,13 @@ export default function Direction() {
         <div className="text-center mb-16">
           <span
             className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
-            style={{ backgroundColor: "#dde8f5", color: "#41588e" }}
+            style={{ backgroundColor: "#dde8f5", color: "#377782" }}
           >
             Liderazgo
           </span>
           <h2
             className="text-3xl sm:text-4xl lg:text-5xl font-bold"
-            style={{ color: "#1a2f5e" }}
+            style={{ color: "#1c2c46" }}
           >
             Dirección
           </h2>
@@ -24,7 +24,7 @@ export default function Direction() {
           <div className="flex-shrink-0 flex flex-col items-center gap-5">
             <h3
               className="text-2xl lg:text-3xl font-bold text-center leading-tight"
-              style={{ color: "#1a2f5e" }}
+              style={{ color: "#1c2c46" }}
             >
               César Escalante
             </h3>
@@ -49,14 +49,14 @@ export default function Direction() {
           <div className="flex flex-col items-start">
             <p
               className="text-sm font-bold uppercase tracking-widest mb-6"
-              style={{ color: "#41588e" }}
+              style={{ color: "#377782" }}
             >
               Fundador y Director General
             </p>
 
             <div
               className="w-12 h-1 rounded-full mb-7"
-              style={{ backgroundColor: "#b0c4df" }}
+              style={{ backgroundColor: "#1b6748" }}
             />
 
             <p className="text-gray-500 text-base leading-relaxed mb-4">
@@ -73,7 +73,7 @@ export default function Direction() {
             <a
               href="#contacto"
               className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-md"
-              style={{ backgroundColor: "#41588e", color: "white" }}
+              style={{ backgroundColor: "#377782", color: "white" }}
             >
               Conocer más sobre la dirección
               <svg

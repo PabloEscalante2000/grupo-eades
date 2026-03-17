@@ -30,13 +30,13 @@ export default function WorkWithInstitutions() {
         <div className="text-center mb-16">
           <span
             className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
-            style={{ backgroundColor: "#eef2f8", color: "#41588e" }}
+            style={{ backgroundColor: "#eef2f8", color: "#377782" }}
           >
             Ámbitos de trabajo
           </span>
           <h2
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5"
-            style={{ color: "#1a2f5e" }}
+            style={{ color: "#1c2c46" }}
           >
             Trabajamos con instituciones
           </h2>
@@ -67,7 +67,7 @@ export default function WorkWithInstitutions() {
               <div className="p-6 flex flex-col flex-1 bg-white">
                 <h3
                   className="text-lg font-bold mb-3"
-                  style={{ color: "#1a2f5e" }}
+                  style={{ color: "#1c2c46" }}
                 >
                   {card.title}
                 </h3>
@@ -81,7 +81,7 @@ export default function WorkWithInstitutions() {
                   <a
                     href="#contacto"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold transition-colors group-hover:gap-2.5"
-                    style={{ color: "#41588e" }}
+                    style={{ color: "#377782" }}
                   >
                     Saber más
                     <svg

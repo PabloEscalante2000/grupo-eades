@@ -44,7 +44,7 @@ export default function Navbar() {
               href={l.href}
               className={`text-sm font-medium transition-colors ${
                 scrolled
-                  ? "text-gray-600 hover:text-[#41588e]"
+                  ? "text-gray-600 hover:text-[#377782]"
                   : "text-white/80 hover:text-white"
               }`}
             >
@@ -58,7 +58,7 @@ export default function Navbar() {
           href="#contacto"
           className={`hidden md:inline-flex px-5 py-2.5 rounded-full text-sm font-semibold transition-all ${
             scrolled
-              ? "bg-[#41588e] text-white hover:bg-[#2d3f6b]"
+              ? "bg-[#377782] text-white hover:bg-[#1c2c46]"
               : "bg-white/15 text-white border border-white/40 hover:bg-white/25"
           }`}
         >
@@ -67,7 +67,7 @@ export default function Navbar() {
 
         {/* Hamburger */}
         <button
-          className={`md:hidden ${scrolled ? "text-[#41588e]" : "text-white"}`}
+          className={`md:hidden ${scrolled ? "text-[#377782]" : "text-white"}`}
           onClick={() => setOpen(!open)}
           aria-label="Menú"
         >
@@ -105,7 +105,7 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-[#41588e] font-medium py-2 border-b border-gray-100 last:border-0 hover:text-[#2d3f6b]"
+                className="text-[#377782] font-medium py-2 border-b border-gray-100 last:border-0 hover:text-[#1c2c46]"
               >
                 {l.label}
               </a>
@@ -113,7 +113,7 @@ export default function Navbar() {
             <a
               href="#contacto"
               onClick={() => setOpen(false)}
-              className="mt-2 text-center px-5 py-3 rounded-full bg-[#41588e] text-white text-sm font-semibold"
+              className="mt-2 text-center px-5 py-3 rounded-full bg-[#377782] text-white text-sm font-semibold"
             >
               Contáctanos
             </a>

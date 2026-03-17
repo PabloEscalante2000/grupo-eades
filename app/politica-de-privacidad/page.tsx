@@ -91,12 +91,12 @@ export default function PoliticaDePrivacidad() {
       {/* Header */}
       <header
         className="py-5 px-6 flex items-center justify-between"
-        style={{ backgroundColor: "#1a2f5e" }}
+        style={{ backgroundColor: "#1c2c46" }}
       >
         <Link href="/" className="flex items-center gap-3">
           <div
             className="w-9 h-9 rounded-lg flex items-center justify-center text-white text-xs font-extrabold"
-            style={{ backgroundColor: "#41588e" }}
+            style={{ backgroundColor: "#377782" }}
           >
             GE
           </div>
@@ -117,7 +117,7 @@ export default function PoliticaDePrivacidad() {
       <div
         className="py-16 px-6 text-center"
         style={{
-          background: "linear-gradient(140deg, #1a2f5e 0%, #41588e 100%)",
+          background: "linear-gradient(140deg, #1c2c46 0%, #377782 100%)",
         }}
       >
         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
@@ -144,13 +144,13 @@ export default function PoliticaDePrivacidad() {
             <div key={s.title}>
               <h2
                 className="text-lg font-bold mb-3"
-                style={{ color: "#1a2f5e" }}
+                style={{ color: "#1c2c46" }}
               >
                 {s.title}
               </h2>
               <div
                 className="w-8 h-0.5 rounded-full mb-4"
-                style={{ backgroundColor: "#b0c4df" }}
+                style={{ backgroundColor: "#1b6748" }}
               />
               <p className="text-gray-500 text-sm leading-relaxed whitespace-pre-line">
                 {s.content}
@@ -163,7 +163,7 @@ export default function PoliticaDePrivacidad() {
       {/* Footer mínimo */}
       <footer
         className="py-8 px-6 text-center text-xs"
-        style={{ backgroundColor: "#0f1e3d", color: "rgba(255,255,255,0.35)" }}
+        style={{ backgroundColor: "#1c2c46", color: "rgba(255,255,255,0.35)" }}
       >
         © {new Date().getFullYear()} Grupo EADES. Todos los derechos reservados. —{" "}
         <Link href="/" className="hover:text-white transition-colors">
