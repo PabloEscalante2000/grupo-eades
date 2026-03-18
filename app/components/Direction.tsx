@@ -31,8 +31,8 @@ export default function Direction() {
             <div
               className="overflow-hidden"
               style={{
-                width: 340,
-                height: 420,
+                width: 420,
+                height: 520,
                 boxShadow: "0 20px 60px rgba(26,47,94,0.18)",
               }}
             >
