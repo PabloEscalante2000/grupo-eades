@@ -1,16 +1,48 @@
 "use client";
 
-import { useRef } from "react";
 import profesionales from "@/public/data/profesionales.json";
 
+type Prof = {
+  nombre: string;
+  img_url: string;
+  obj_pos?: string;
+  cpp?: string;
+  rol: string;
+};
+
+function ProfCard({ p }: { p: Prof }) {
+  return (
+    <div className="overflow-hidden shadow-sm flex flex-col group hover:shadow-xl transition-shadow duration-300">
+      <div
+        className="aspect-[220/256] overflow-hidden"
+        style={{
+          backgroundImage: `url('/${p.img_url}')`,
+          backgroundSize: "cover",
+          backgroundPosition: p.obj_pos ?? "center",
+        }}
+      />
+      <div className="p-5 flex flex-col flex-1 bg-white">
+        <p className="font-bold text-base leading-snug mb-1" style={{ color: "#1c2c46" }}>
+          {p.nombre}
+        </p>
+        <p className="text-sm text-gray-500 leading-snug mb-3">{p.rol}</p>
+        {p.cpp && (
+          <span
+            className="self-start text-sm font-semibold px-2 py-0.5 rounded-full"
+            style={{ backgroundColor: "#eef2f8", color: "#377782" }}
+          >
+            {p.cpp}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+const directivos = profesionales.slice(0, 3);
+const equipo = profesionales.slice(3);
+
 export default function OurTeam() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const scroll = (dir: "left" | "right") => {
-    if (!scrollRef.current) return;
-    scrollRef.current.scrollBy({ left: dir === "right" ? 300 : -300, behavior: "smooth" });
-  };
-
   return (
     <section id="nuestro-equipo" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -30,82 +62,26 @@ export default function OurTeam() {
           </h2>
         </div>
 
-        {/* Carousel wrapper */}
-        <div className="relative">
-          {/* Left button */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 -translate-x-4 w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all hover:scale-105"
-            style={{ backgroundColor: "#1c2c46", color: "white" }}
-            aria-label="Anterior"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+        {/* Nuestro Equipo Directivo */}
+        <h3 className="text-2xl font-bold mb-8" style={{ color: "#1c2c46" }}>
+          Nuestro Equipo Directivo
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {directivos.map((p, i) => (
+            <ProfCard key={i} p={p} />
+          ))}
+        </div>
 
-          {/* Scrollable row */}
-          <div
-            ref={scrollRef}
-            className="flex gap-6 overflow-x-auto pb-4 scroll-smooth"
-            style={{ scrollSnapType: "x mandatory", scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {profesionales.map((p, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 overflow-hidden shadow-sm flex flex-col group hover:shadow-xl transition-shadow duration-300"
-                style={{ width: 220, scrollSnapAlign: "start" }}
-              >
-                {/* Photo */}
-                <div
-                  className="h-64 overflow-hidden"
-                  style={{
-                    backgroundImage: `url('/${p.img_url}')`,
-                    backgroundSize: "cover",
-                    backgroundPosition: p.obj_pos ?? "center",
-                  }}
-                />
-
-                {/* Info */}
-                <div className="p-5 flex flex-col flex-1 bg-white">
-                  <p
-                    className="font-bold text-base leading-snug mb-1"
-                    style={{ color: "#1c2c46" }}
-                  >
-                    {p.nombre}
-                  </p>
-                  <p className="text-sm text-gray-500 leading-snug mb-3">{p.rol}</p>
-                  {p.cpp && (
-                    <span
-                      className="self-start text-sm font-semibold px-2 py-0.5 rounded-full"
-                      style={{ backgroundColor: "#eef2f8", color: "#377782" }}
-                    >
-                      {p.cpp}
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Right button */}
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 translate-x-4 w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all hover:scale-105"
-            style={{ backgroundColor: "#1c2c46", color: "white" }}
-            aria-label="Siguiente"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+        {/* Nuestro Equipo */}
+        <h3 className="text-2xl font-bold mb-8" style={{ color: "#1c2c46" }}>
+          Nuestro Equipo
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {equipo.map((p, i) => (
+            <ProfCard key={i} p={p} />
+          ))}
         </div>
       </div>
-
-      {/* Hide scrollbar for webkit */}
-      <style>{`
-        #nuestro-equipo div::-webkit-scrollbar { display: none; }
-      `}</style>
     </section>
   );
 }

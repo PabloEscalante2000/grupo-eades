@@ -21,7 +21,7 @@ const brands = [
       "Psicoterapia y psicoeducación especializada para niños y adolescentes. Acompañamiento clínico centrado en el desarrollo infantil y la salud mental desde las primeras etapas de vida.",
     url: "https://pseres.pe",
     urlLabel: "pseres.pe",
-    logo: "https://pseres.pe/assets/pseres_logo.png",
+    logo: "/img/pseres_logo.jpeg",
     bgImage: "https://pseres.pe/assets/porque_elegir_pseres.jpg",
     overlayColors: ["rgba(20,40,80,0.68)", "rgba(55,78,128,0.74)"],
     fallback: { from: "#1c2c46", to: "#377782" },
@@ -108,12 +108,12 @@ export default function OurBrands() {
             >
               <div className="px-10 py-14 lg:px-16 max-w-xl w-full">
                 {/* Logo in content area (colored version) */}
-                <div className="mb-7 h-20 flex items-start">
+                <div className="mb-7 h-32 flex items-start">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={brand.logo}
                     alt={`Logo ${brand.name}`}
-                    className="h-full max-w-[200px] w-auto object-contain object-left"
+                    className="h-full max-w-[300px] w-auto object-contain object-left"
                     onError={(e) => {
                       const el = e.target as HTMLImageElement;
                       el.style.display = "none";

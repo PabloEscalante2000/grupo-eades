@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     images: ["/img/logo_fondo_claro.png"],
   },
   icons: {
-    icon: "/img/logo_fondo_claro.png",
-    shortcut: "/img/logo_fondo_claro.png",
-    apple: "/img/logo_fondo_claro.png",
+    icon: "/img/icono_grupo_eades.png",
+    shortcut: "/img/icono_grupo_eades.png",
+    apple: "/img/icono_grupo_eades.png",
   },
 };
 

@@ -36,38 +36,38 @@ export default function Navbar() {
           />
         </a>
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className={`text-base font-medium transition-colors ${
-                scrolled
-                  ? "text-gray-600 hover:text-[#377782]"
-                  : "text-white/80 hover:text-white"
-              }`}
-            >
-              {l.label}
-            </a>
-          ))}
-        </nav>
-
-        {/* CTA */}
-        <a
-          href="#contacto"
-          className={`hidden md:inline-flex px-6 py-3 rounded-full text-base font-semibold transition-all ${
-            scrolled
-              ? "bg-[#377782] text-white hover:bg-[#1c2c46]"
-              : "bg-white/15 text-white border border-white/40 hover:bg-white/25"
-          }`}
-        >
-          Contáctanos
-        </a>
+        {/* Desktop nav + CTA (right side) */}
+        <div className="hidden lg:flex items-center gap-8">
+          <nav className="flex items-center gap-8">
+            {links.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className={`text-base font-medium transition-colors ${
+                  scrolled
+                    ? "text-gray-600 hover:text-[#377782]"
+                    : "text-white/80 hover:text-white"
+                }`}
+              >
+                {l.label}
+              </a>
+            ))}
+          </nav>
+          <a
+            href="#contacto"
+            className={`inline-flex px-6 py-3 rounded-full text-base font-semibold transition-all ${
+              scrolled
+                ? "bg-[#377782] text-white hover:bg-[#1c2c46]"
+                : "bg-white/15 text-white border border-white/40 hover:bg-white/25"
+            }`}
+          >
+            Contáctanos
+          </a>
+        </div>
 
         {/* Hamburger */}
         <button
-          className={`md:hidden ${scrolled ? "text-[#377782]" : "text-white"}`}
+          className={`lg:hidden ${scrolled ? "text-[#377782]" : "text-white"}`}
           onClick={() => setOpen(!open)}
           aria-label="Menú"
         >
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
           <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col gap-4">
             {links.map((l) => (
               <a

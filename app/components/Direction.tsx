@@ -60,8 +60,7 @@ export default function Direction() {
             />
 
             <p className="text-gray-500 text-lg leading-relaxed mb-4">
-              Psicoterapeuta y neuropsicólogo con más de 25 años de experiencia
-              clínica.
+              Psicoterapeuta y neuropsicólogo con más de 25 años de experiencia en educación y salud mental.
             </p>
             <p className="text-gray-500 text-lg leading-relaxed mb-10">
               Desde la dirección del Grupo EADES, coordina el desarrollo
