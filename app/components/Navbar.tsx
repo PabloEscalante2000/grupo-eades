@@ -25,14 +25,14 @@ export default function Navbar() {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between py-4">
+      <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between py-5">
         {/* Logo */}
         <a href="#inicio" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={scrolled ? "/img/logo_fondo_claro.png" : "/img/logo_fondo_oscuro.png"}
             alt="Grupo EADES"
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
         </a>
 
@@ -42,7 +42,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-base font-medium transition-colors ${
                 scrolled
                   ? "text-gray-600 hover:text-[#377782]"
                   : "text-white/80 hover:text-white"
@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contacto"
-          className={`hidden md:inline-flex px-5 py-2.5 rounded-full text-sm font-semibold transition-all ${
+          className={`hidden md:inline-flex px-6 py-3 rounded-full text-base font-semibold transition-all ${
             scrolled
               ? "bg-[#377782] text-white hover:bg-[#1c2c46]"
               : "bg-white/15 text-white border border-white/40 hover:bg-white/25"

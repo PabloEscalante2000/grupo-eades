@@ -68,22 +68,6 @@ export default function Hero() {
       {/* Main content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="max-w-3xl">
-          {/* Tag */}
-          <span
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.18em] mb-8"
-            style={{
-              backgroundColor: "rgba(55,119,130,0.15)",
-              color: "#377782",
-              border: "1px solid rgba(55,119,130,0.35)",
-            }}
-          >
-            <span
-              className="w-1.5 h-1.5 rounded-full"
-              style={{ backgroundColor: "#377782" }}
-            />
-            Grupo EADES
-          </span>
-
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.12] mb-7">
             Salud mental aplicada a{" "}
