@@ -5,7 +5,7 @@ export default function Direction() {
         {/* Header */}
         <div className="text-center mb-16">
           <span
-            className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+            className="inline-block px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4"
             style={{ backgroundColor: "#dde8f5", color: "#377782" }}
           >
             Liderazgo
@@ -48,7 +48,7 @@ export default function Direction() {
           {/* Text */}
           <div className="flex flex-col items-start">
             <p
-              className="text-sm font-bold uppercase tracking-widest mb-6"
+              className="text-base font-bold uppercase tracking-widest mb-6"
               style={{ color: "#377782" }}
             >
               Fundador y Director General
@@ -59,11 +59,11 @@ export default function Direction() {
               style={{ backgroundColor: "#1b6748" }}
             />
 
-            <p className="text-gray-500 text-base leading-relaxed mb-4">
+            <p className="text-gray-500 text-lg leading-relaxed mb-4">
               Psicoterapeuta y neuropsicólogo con más de 25 años de experiencia
               clínica.
             </p>
-            <p className="text-gray-500 text-base leading-relaxed mb-10">
+            <p className="text-gray-500 text-lg leading-relaxed mb-10">
               Desde la dirección del Grupo EADES, coordina el desarrollo
               conceptual, clínico y metodológico de las distintas unidades,
               asegurando la coherencia entre práctica terapéutica, formación y
@@ -72,7 +72,7 @@ export default function Direction() {
 
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-md"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-base transition-all hover:scale-[1.03] hover:shadow-md"
               style={{ backgroundColor: "#377782", color: "white" }}
             >
               Conocer más sobre la dirección

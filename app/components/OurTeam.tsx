@@ -17,7 +17,7 @@ export default function OurTeam() {
         {/* Header */}
         <div className="text-center mb-14">
           <span
-            className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+            className="inline-block px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4"
             style={{ backgroundColor: "#eef2f8", color: "#377782" }}
           >
             Profesionales
@@ -69,15 +69,15 @@ export default function OurTeam() {
                 {/* Info */}
                 <div className="p-5 flex flex-col flex-1 bg-white">
                   <p
-                    className="font-bold text-sm leading-snug mb-1"
+                    className="font-bold text-base leading-snug mb-1"
                     style={{ color: "#1c2c46" }}
                   >
                     {p.nombre}
                   </p>
-                  <p className="text-xs text-gray-500 leading-snug mb-3">{p.rol}</p>
+                  <p className="text-sm text-gray-500 leading-snug mb-3">{p.rol}</p>
                   {p.cpp && (
                     <span
-                      className="self-start text-xs font-semibold px-2 py-0.5 rounded-full"
+                      className="self-start text-sm font-semibold px-2 py-0.5 rounded-full"
                       style={{ backgroundColor: "#eef2f8", color: "#377782" }}
                     >
                       {p.cpp}

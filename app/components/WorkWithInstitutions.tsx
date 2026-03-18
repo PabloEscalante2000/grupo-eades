@@ -29,7 +29,7 @@ export default function WorkWithInstitutions() {
         {/* Header */}
         <div className="text-center mb-16">
           <span
-            className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+            className="inline-block px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4"
             style={{ backgroundColor: "#eef2f8", color: "#377782" }}
           >
             Ámbitos de trabajo
@@ -40,7 +40,7 @@ export default function WorkWithInstitutions() {
           >
             Trabajamos con instituciones
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-500 text-xl max-w-2xl mx-auto leading-relaxed">
             El Grupo EADES desarrolla programas de salud mental para
             organizaciones y contextos educativos.
           </p>
@@ -66,12 +66,12 @@ export default function WorkWithInstitutions() {
               {/* Content */}
               <div className="p-6 flex flex-col flex-1 bg-white">
                 <h3
-                  className="text-lg font-bold mb-3"
+                  className="text-xl font-bold mb-3"
                   style={{ color: "#1c2c46" }}
                 >
                   {card.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed flex-1">
+                <p className="text-gray-500 text-base leading-relaxed flex-1">
                   {card.description}
                 </p>
                 <div
@@ -80,7 +80,7 @@ export default function WorkWithInstitutions() {
                 >
                   <a
                     href="#contacto"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold transition-colors group-hover:gap-2.5"
+                    className="inline-flex items-center gap-1.5 text-base font-semibold transition-colors group-hover:gap-2.5"
                     style={{ color: "#377782" }}
                   >
                     Saber más

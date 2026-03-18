@@ -69,7 +69,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="max-w-3xl">
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.12] mb-7">
+          <h1 className="text-5xl sm:text-6xl lg:text-[4rem] font-bold text-white leading-[1.12] mb-7">
             Salud mental aplicada a{" "}
             <span style={{ color: "#377782" }}>personas</span>,{" "}
             <span style={{ color: "#377782" }}>instituciones</span> y{" "}
@@ -77,7 +77,7 @@ export default function Hero() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/70 text-lg leading-relaxed mb-11 max-w-2xl">
+          <p className="text-white/70 text-xl leading-relaxed mb-11 max-w-2xl">
             Grupo EADES conecta práctica clínica, investigación y formación
             especializada para desarrollar programas y colaboraciones con
             instituciones, universidades y organizaciones.
@@ -87,7 +87,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#nuestras-marcas"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-lg"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-base transition-all hover:scale-[1.03] hover:shadow-lg"
               style={{ backgroundColor: "#377782", color: "white" }}
             >
               Explorar nuestras unidades
@@ -107,7 +107,7 @@ export default function Hero() {
             </a>
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-sm text-white transition-all hover:bg-white/10"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-base text-white transition-all hover:bg-white/10"
               style={{ border: "2px solid rgba(255,255,255,0.35)" }}
             >
               Hablar con nosotros

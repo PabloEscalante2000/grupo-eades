@@ -31,7 +31,7 @@ export default function Contact() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Badge */}
         <span
-          className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-7"
+          className="inline-block px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-7"
           style={{
             backgroundColor: "rgba(55,119,130,0.15)",
             color: "#377782",
@@ -47,7 +47,7 @@ export default function Contact() {
           en mente?
         </h2>
 
-        <p className="text-white/65 text-lg mb-12 max-w-xl mx-auto leading-relaxed">
+        <p className="text-white/65 text-xl mb-12 max-w-xl mx-auto leading-relaxed">
           Escríbenos y cuéntanos sobre tu institución u organización. Estaremos
           encantados de explorar cómo podemos trabajar juntos.
         </p>
@@ -130,10 +130,10 @@ export default function Contact() {
               >
                 {item.icon}
               </div>
-              <p className="text-white/50 text-xs uppercase tracking-widest font-semibold">
+              <p className="text-white/50 text-sm uppercase tracking-widest font-semibold">
                 {item.label}
               </p>
-              <p className="text-white font-semibold text-sm">{item.value}</p>
+              <p className="text-white font-semibold text-base">{item.value}</p>
             </div>
           ))}
         </div>
@@ -143,7 +143,7 @@ export default function Contact() {
           href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2.5 px-9 py-4 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-xl"
+          className="inline-flex items-center gap-2.5 px-9 py-4 rounded-full font-semibold text-base transition-all hover:scale-[1.03] hover:shadow-xl"
           style={{ backgroundColor: "#377782", color: "white" }}
         >
           Enviar un mensaje

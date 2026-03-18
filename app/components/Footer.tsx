@@ -29,7 +29,7 @@ export default function Footer() {
                 className="h-10 w-auto"
               />
             </div>
-            <p className="text-white/45 text-sm leading-relaxed">
+            <p className="text-white/45 text-base leading-relaxed">
               Conectando práctica clínica, investigación y formación
               especializada en salud mental para personas, instituciones y
               comunidades.
@@ -39,7 +39,7 @@ export default function Footer() {
           {/* Navigation */}
           <div>
             <h4
-              className="text-xs font-bold uppercase tracking-widest mb-5"
+              className="text-sm font-bold uppercase tracking-widest mb-5"
               style={{ color: "#377782" }}
             >
               Navegación
@@ -49,7 +49,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-white/50 text-sm hover:text-white transition-colors"
+                    className="text-white/50 text-base hover:text-white transition-colors"
                   >
                     {item.label}
                   </a>
@@ -61,7 +61,7 @@ export default function Footer() {
           {/* Brands */}
           <div>
             <h4
-              className="text-xs font-bold uppercase tracking-widest mb-5"
+              className="text-sm font-bold uppercase tracking-widest mb-5"
               style={{ color: "#377782" }}
             >
               Nuestras Marcas
@@ -73,7 +73,7 @@ export default function Footer() {
                     href={brand.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/50 text-sm hover:text-white transition-colors inline-flex items-center gap-1.5 group"
+                    className="text-white/50 text-base hover:text-white transition-colors inline-flex items-center gap-1.5 group"
                   >
                     {brand.name}
                     <svg
@@ -101,19 +101,19 @@ export default function Footer() {
           className="border-t pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
           style={{ borderColor: "rgba(255,255,255,0.08)" }}
         >
-          <p className="text-white/30 text-xs">
+          <p className="text-white/30 text-sm">
             © {new Date().getFullYear()} Grupo EADES. Todos los derechos
             reservados.
           </p>
           <div className="flex items-center gap-4">
             <a
               href="/politica-de-privacidad/"
-              className="text-white/30 text-xs hover:text-white/60 transition-colors"
+              className="text-white/30 text-sm hover:text-white/60 transition-colors"
             >
               Política de Privacidad
             </a>
             <span className="text-white/20 text-xs">·</span>
-            <p className="text-white/30 text-xs">Lima, Perú</p>
+            <p className="text-white/30 text-sm">Lima, Perú</p>
           </div>
         </div>
       </div>

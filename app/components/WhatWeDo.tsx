@@ -60,7 +60,7 @@ export default function WhatWeDo() {
         {/* Header */}
         <div className="text-center mb-16">
           <span
-            className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+            className="inline-block px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4"
             style={{ backgroundColor: "#eef2f8", color: "#377782" }}
           >
             Nuestros servicios
@@ -71,7 +71,7 @@ export default function WhatWeDo() {
           >
             ¿Qué Hacemos?
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-500 text-xl max-w-2xl mx-auto leading-relaxed">
             Desarrollamos soluciones especializadas en salud mental para
             personas, profesionales e instituciones, con un enfoque integral
             y basado en evidencia.
@@ -98,12 +98,12 @@ export default function WhatWeDo() {
               {/* Content */}
               <div className="p-6 flex flex-col flex-1 bg-white">
                 <h3
-                  className="text-lg font-bold mb-3"
+                  className="text-xl font-bold mb-3"
                   style={{ color: "#1c2c46" }}
                 >
                   {card.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed flex-1">
+                <p className="text-gray-500 text-base leading-relaxed flex-1">
                   {card.description}
                 </p>
                 <div
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
                 >
                   <a
                     href="#contacto"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold transition-colors group-hover:gap-2.5"
+                    className="inline-flex items-center gap-1.5 text-base font-semibold transition-colors group-hover:gap-2.5"
                     style={{ color: "#377782" }}
                   >
                     Saber más

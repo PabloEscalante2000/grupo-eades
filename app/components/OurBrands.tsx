@@ -9,7 +9,7 @@ const brands = [
     url: "https://eadespsicoterapia.com",
     urlLabel: "eadespsicoterapia.com",
     logo: "https://eadespsicoterapia.com/logo_eades.webp",
-    bgImage: "https://eadespsicoterapia.com/assets/bg-3.jpg",
+    bgImage: "/img/eades_ref.jpg",
     overlayColors: ["rgba(26,47,94,0.72)", "rgba(65,88,142,0.78)"],
     fallback: { from: "#1c2c46", to: "#377782" },
     imageLeft: true,
@@ -61,7 +61,7 @@ export default function OurBrands() {
       {/* Section header */}
       <div className="py-20 text-center" style={{ backgroundColor: "#f4f7fb" }}>
         <span
-          className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+          className="inline-block px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4"
           style={{ backgroundColor: "#dde8f5", color: "#377782" }}
         >
           Nuestro ecosistema
@@ -72,7 +72,7 @@ export default function OurBrands() {
         >
           Nuestras Marcas
         </h2>
-        <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-500 text-xl max-w-2xl mx-auto">
           Cuatro organizaciones especializadas que trabajan en red para ofrecer
           soluciones integrales en salud mental.
         </p>
@@ -82,9 +82,8 @@ export default function OurBrands() {
       {brands.map((brand, i) => (
         <div key={brand.name} className="w-full">
           <div
-            className={`flex flex-col ${
-              brand.imageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
-            }`}
+            className={`flex flex-col ${brand.imageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+              }`}
           >
             {/* Visual / image side */}
             <div
@@ -92,13 +91,13 @@ export default function OurBrands() {
               style={
                 brand.bgImage
                   ? {
-                      backgroundImage: `url('${brand.bgImage}')`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }
+                    backgroundImage: `url('${brand.bgImage}')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }
                   : {
-                      background: `linear-gradient(135deg, ${brand.fallback.from} 0%, ${brand.fallback.to} 100%)`,
-                    }
+                    background: `linear-gradient(135deg, ${brand.fallback.from} 0%, ${brand.fallback.to} 100%)`,
+                  }
               }
             />
 
@@ -133,7 +132,7 @@ export default function OurBrands() {
 
                 {/* Tagline */}
                 <p
-                  className="text-xs font-bold uppercase tracking-widest mb-3"
+                  className="text-sm font-bold uppercase tracking-widest mb-3"
                   style={{ color: "#377782" }}
                 >
                   {brand.tagline}
@@ -154,7 +153,7 @@ export default function OurBrands() {
                 />
 
                 {/* Description */}
-                <p className="text-gray-500 text-base leading-relaxed mb-9">
+                <p className="text-gray-500 text-lg leading-relaxed mb-9">
                   {brand.description}
                 </p>
 
@@ -163,7 +162,7 @@ export default function OurBrands() {
                   href={brand.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm transition-all hover:scale-[1.03] hover:shadow-md"
+                  className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-base transition-all hover:scale-[1.03] hover:shadow-md"
                   style={{ backgroundColor: "#377782", color: "white" }}
                 >
                   Visitar sitio
@@ -182,7 +181,7 @@ export default function OurBrands() {
                   </svg>
                 </a>
 
-                <p className="mt-3 text-xs text-gray-400">{brand.urlLabel}</p>
+                <p className="mt-3 text-sm text-gray-400">{brand.urlLabel}</p>
               </div>
             </div>
           </div>
