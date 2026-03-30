@@ -2,6 +2,7 @@ const cards = [
   {
     image: "https://eadespsicoterapia.com/assets/terapia-individual.jpg",
     overlay: "rgba(29,47,94,0.62)",
+    href: "/servicios/atencion-psicoterapeutica",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
@@ -15,6 +16,7 @@ const cards = [
   {
     image: "/img/form_educacion.jpeg",
     overlay: "rgba(42,74,104,0.62)",
+    href: "/servicios/formacion-y-educacion",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
@@ -28,6 +30,7 @@ const cards = [
   {
     image: "https://eadespsicoterapia.com/assets/loq-1.jpg",
     overlay: "rgba(35,58,112,0.60)",
+    href: "/servicios/programas-institucionales",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
@@ -41,6 +44,7 @@ const cards = [
   {
     image: "/img/ilumina_fondo.jpg",
     overlay: "rgba(25,50,96,0.60)",
+    href: "/servicios/intervencion-social",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
@@ -52,6 +56,8 @@ const cards = [
       "Prevención en comunidades y contextos de vulnerabilidad. Programas de acompañamiento y protección de la salud mental colectiva con impacto social sostenido.",
   },
 ];
+
+import Link from "next/link";
 
 export default function WhatWeDo() {
   return (
@@ -110,8 +116,8 @@ export default function WhatWeDo() {
                   className="mt-5 pt-5 border-t"
                   style={{ borderColor: "#eef2f8" }}
                 >
-                  <a
-                    href="#contacto"
+                  <Link
+                    href={card.href}
                     className="inline-flex items-center gap-1.5 text-base font-semibold transition-colors group-hover:gap-2.5"
                     style={{ color: "#377782" }}
                   >
@@ -129,7 +135,7 @@ export default function WhatWeDo() {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
