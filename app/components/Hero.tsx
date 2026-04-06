@@ -4,10 +4,20 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{
-        background:
-          "linear-gradient(140deg, #1c2c46 0%, #1c3540 35%, #377782 70%, #2d6672 100%)",
+        backgroundImage: "url('/img/hb_grupo_eades.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
+      {/* Color overlay */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(140deg, rgba(28,44,70,0.82) 0%, rgba(28,53,64,0.80) 35%, rgba(55,119,130,0.72) 70%, rgba(45,102,114,0.78) 100%)",
+        }}
+      />
+
       {/* Dot grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.06]"

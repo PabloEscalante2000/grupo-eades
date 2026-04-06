@@ -1,6 +1,6 @@
 const cards = [
   {
-    image: "https://eadespsicoterapia.com/assets/terapia-individual.jpg",
+    image: "/img/atencion_psicoterapeutica.jpg",
     overlay: "rgba(29,47,94,0.62)",
     href: "/servicios/atencion-psicoterapeutica",
     icon: (
@@ -14,7 +14,7 @@ const cards = [
       "Para niños, adolescentes, jóvenes y adultos. Acompañamiento clínico especializado orientado al desarrollo del bienestar emocional y la salud mental integral.",
   },
   {
-    image: "/img/form_educacion.jpeg",
+    image: "/img/formacion_educacion.jpg",
     overlay: "rgba(42,74,104,0.62)",
     href: "/servicios/formacion-y-educacion",
     icon: (
@@ -28,7 +28,7 @@ const cards = [
       "En salud mental para profesionales, instituciones y comunidades. Programas de capacitación y actualización basados en evidencia científica y enfoques contemporáneos.",
   },
   {
-    image: "https://eadespsicoterapia.com/assets/loq-1.jpg",
+    image: "/img/programas_institucionales.jpg",
     overlay: "rgba(35,58,112,0.60)",
     href: "/servicios/programas-institucionales",
     icon: (
