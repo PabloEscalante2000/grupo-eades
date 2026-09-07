@@ -70,7 +70,7 @@ export default function Direction() {
             </p>
 
             <a
-              href="#contacto"
+              href="/#contacto"
               className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-base transition-all hover:scale-[1.03] hover:shadow-md"
               style={{ backgroundColor: "#377782", color: "white" }}
             >

@@ -1,14 +1,49 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+
+const heroImages = [
+  "/img/hb_grupo_eades.jpg",
+  "/img/fondo_hero_2.png",
+  "/img/fondo_hero_3.png",
+  "/img/fondo_hero_4.png",
+  "/img/fondo_hero_5.png",
+];
+
 export default function Hero() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrent((c) => (c + 1) % heroImages.length);
+    }, 6000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section
       id="inicio"
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{
-        backgroundImage: "url('/img/hb_grupo_eades.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
+      {/* Background slideshow */}
+      <div
+        className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {heroImages.map((img) => (
+          <div
+            key={img}
+            className="w-full h-full flex-shrink-0"
+            style={{
+              backgroundImage: `url('${img}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+        ))}
+      </div>
+
       {/* Color overlay */}
       <div
         className="absolute inset-0"
@@ -79,62 +114,28 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="max-w-3xl">
           {/* Title */}
-          <h1 className="text-5xl sm:text-6xl lg:text-[4rem] font-bold text-white leading-[1.12] mb-7">
+          <h1 className="text-5xl sm:text-6xl lg:text-[4rem] font-bold text-white leading-[1.12] mb-11">
             Salud mental aplicada a{" "}
-            <span style={{ color: "#377782" }}>personas</span>,{" "}
-            <span style={{ color: "#377782" }}>instituciones</span> y{" "}
-            <span style={{ color: "#377782" }}>comunidades</span>
+            <span style={{ color: "#377782" }}>personas</span> e{" "}
+            <span style={{ color: "#377782" }}>instituciones</span>
           </h1>
-
-          {/* Description */}
-          <p className="text-white/70 text-xl leading-relaxed mb-11 max-w-2xl">
-            Grupo EADES conecta práctica clínica, investigación y formación
-            especializada para desarrollar programas y colaboraciones con
-            instituciones, universidades y organizaciones.
-          </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#nuestras-marcas"
+              href="#trabajamos-con"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-base transition-all hover:scale-[1.03] hover:shadow-lg"
               style={{ backgroundColor: "#377782", color: "white" }}
             >
-              Explorar nuestras unidades
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
+              Como Empresa
             </a>
-            <a
-              href="#contacto"
+            <Link
+              href="/servicios/acompanamiento-instituciones-educativas/"
               className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-semibold text-base text-white transition-all hover:bg-white/10"
               style={{ border: "2px solid rgba(255,255,255,0.35)" }}
             >
-              Hablar con nosotros
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </a>
+              Como Colegio
+            </Link>
           </div>
         </div>
       </div>

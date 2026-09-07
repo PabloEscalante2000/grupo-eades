@@ -8,8 +8,8 @@ const brands = [
 const nav = [
   { label: "Inicio", href: "#inicio" },
   { label: "¿Qué Hacemos?", href: "#que-hacemos" },
-  { label: "Nuestras Marcas", href: "#nuestras-marcas" },
-  { label: "Nuestro Equipo", href: "#nuestro-equipo" },
+  { label: "Nuestras Marcas", href: "/nuestras-marcas" },
+  { label: "Nuestro Equipo", href: "/nuestro-equipo" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -113,7 +113,7 @@ export default function Footer() {
               Política de Privacidad
             </a>
             <span className="text-white/20 text-xs">·</span>
-            <p className="text-white/30 text-sm">Lima, Perú</p>
+            <p className="text-white/30 text-sm">Miraflores, General Silva 570</p>
           </div>
         </div>
       </div>

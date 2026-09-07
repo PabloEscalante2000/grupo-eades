@@ -72,7 +72,7 @@ export default function Contact() {
                 </svg>
               ),
               label: "Correo electrónico",
-              value: "contacto@grupoeades.com",
+              value: "contacto@grupoeades.org",
             },
             {
               icon: (
@@ -116,7 +116,7 @@ export default function Contact() {
                 </svg>
               ),
               label: "Ubicación",
-              value: "Lima, Perú",
+              value: "Miraflores, General Silva 570",
             },
           ].map((item) => (
             <div

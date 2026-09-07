@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
@@ -61,7 +62,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

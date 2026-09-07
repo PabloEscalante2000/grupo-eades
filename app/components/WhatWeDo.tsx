@@ -28,18 +28,18 @@ const cards = [
       "En salud mental para profesionales, instituciones y comunidades. Programas de capacitación y actualización basados en evidencia científica y enfoques contemporáneos.",
   },
   {
-    image: "/img/programas_institucionales.jpg",
+    image: "/img/fondo_hero_2.png",
     overlay: "rgba(35,58,112,0.60)",
-    href: "/servicios/programas-institucionales",
+    href: "/servicios/acompanamiento-instituciones-educativas",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
           d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
-    title: "Programas institucionales",
+    title: "Acompañamiento psicológico y psicoeducativo para instituciones educativas",
     description:
-      "Para empresas, centros educativos y organizaciones. Diseño e implementación de estrategias integrales de salud mental a nivel organizacional.",
+      "Articulamos cinco líneas de trabajo para colegios: formación docente, tamizaje por grados, derivación de casos a tarifa preferente, neuroeducación para la inclusión y escuela para padres.",
   },
   {
     image: "/img/ilumina_fondo.jpg",

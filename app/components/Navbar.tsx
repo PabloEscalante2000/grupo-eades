@@ -5,14 +5,14 @@ import Link from "next/link";
 const serviceLinks = [
   { label: "Atención psicoterapéutica", href: "/servicios/atencion-psicoterapeutica" },
   { label: "Formación y educación", href: "/servicios/formacion-y-educacion" },
-  { label: "Programas institucionales", href: "/servicios/programas-institucionales" },
+  { label: "Acompañamiento para instituciones educativas", href: "/servicios/acompanamiento-instituciones-educativas" },
   { label: "Intervención social", href: "/servicios/intervencion-social" },
 ];
 
 const links = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Nuestras Marcas", href: "#nuestras-marcas" },
-  { label: "Nuestro Equipo", href: "#nuestro-equipo" },
+  { label: "Nuestras Marcas", href: "/nuestras-marcas" },
+  { label: "Nuestro Equipo", href: "/nuestro-equipo" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -123,30 +123,21 @@ export default function Navbar() {
             </div>
 
             {/* Rest of links */}
-            {links.slice(1).map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className={`text-base font-medium transition-colors ${
-                  scrolled
-                    ? "text-gray-600 hover:text-[#377782]"
-                    : "text-white/80 hover:text-white"
-                }`}
-              >
-                {l.label}
-              </a>
-            ))}
+            {links.slice(1).map((l) => {
+              const className = `text-base font-medium transition-colors ${
+                scrolled ? "text-gray-600 hover:text-[#377782]" : "text-white/80 hover:text-white"
+              }`;
+              return l.href.startsWith("/") ? (
+                <Link key={l.href} href={l.href} className={className}>
+                  {l.label}
+                </Link>
+              ) : (
+                <a key={l.href} href={l.href} className={className}>
+                  {l.label}
+                </a>
+              );
+            })}
           </nav>
-          <a
-            href="#contacto"
-            className={`inline-flex px-6 py-3 rounded-full text-base font-semibold transition-all ${
-              scrolled
-                ? "bg-[#377782] text-white hover:bg-[#1c2c46]"
-                : "bg-white/15 text-white border border-white/40 hover:bg-white/25"
-            }`}
-          >
-            Contáctanos
-          </a>
         </div>
 
         {/* Hamburger */}
@@ -216,23 +207,19 @@ export default function Navbar() {
               )}
             </div>
 
-            {links.slice(1).map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="text-[#377782] font-medium py-2.5 border-b border-gray-100 last:border-0 hover:text-[#1c2c46]"
-              >
-                {l.label}
-              </a>
-            ))}
-            <a
-              href="#contacto"
-              onClick={() => setOpen(false)}
-              className="mt-2 text-center px-5 py-3 rounded-full bg-[#377782] text-white text-sm font-semibold"
-            >
-              Contáctanos
-            </a>
+            {links.slice(1).map((l) => {
+              const className =
+                "text-[#377782] font-medium py-2.5 border-b border-gray-100 last:border-0 hover:text-[#1c2c46]";
+              return l.href.startsWith("/") ? (
+                <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className={className}>
+                  {l.label}
+                </Link>
+              ) : (
+                <a key={l.href} href={l.href} onClick={() => setOpen(false)} className={className}>
+                  {l.label}
+                </a>
+              );
+            })}
           </div>
         </div>
       )}

@@ -12,8 +12,8 @@ const sections = [
     title: "1. Responsable del tratamiento",
     content: `Grupo EADES (en adelante, "el Grupo") es el responsable del tratamiento de los datos personales recopilados a través del sitio web grupoeades.com. Para cualquier consulta relacionada con el tratamiento de sus datos puede contactarnos en:
 
-Correo electrónico: contacto@grupoeades.com
-Dirección: Lima, Perú`,
+Correo electrónico: contacto@grupoeades.org
+Dirección: Miraflores, General Silva 570`,
   },
   {
     title: "2. Marco legal",
@@ -65,7 +65,7 @@ No utilizamos sus datos para enviar comunicaciones comerciales no solicitadas.`,
 • Cancelación / Supresión: solicitar la eliminación de sus datos cuando ya no sean necesarios.
 • Oposición: oponerse al tratamiento de sus datos en determinadas circunstancias.
 
-Para ejercer cualquiera de estos derechos, envíe una solicitud escrita a contacto@grupoeades.com indicando su nombre completo, el derecho que desea ejercer y la documentación que acredite su identidad. Atenderemos su solicitud en el plazo establecido por la normativa vigente.`,
+Para ejercer cualquiera de estos derechos, envíe una solicitud escrita a contacto@grupoeades.org indicando su nombre completo, el derecho que desea ejercer y la documentación que acredite su identidad. Atenderemos su solicitud en el plazo establecido por la normativa vigente.`,
   },
   {
     title: "9. Seguridad",
@@ -81,7 +81,7 @@ Para ejercer cualquiera de estos derechos, envíe una solicitud escrita a contac
   },
   {
     title: "12. Contacto y reclamaciones",
-    content: `Si tiene alguna duda sobre el tratamiento de sus datos o desea presentar una reclamación, puede contactarnos en contacto@grupoeades.com. Si considera que el tratamiento no se ajusta a la normativa vigente, puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales del Perú (ANPDP).`,
+    content: `Si tiene alguna duda sobre el tratamiento de sus datos o desea presentar una reclamación, puede contactarnos en contacto@grupoeades.org. Si considera que el tratamiento no se ajusta a la normativa vigente, puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales del Perú (ANPDP).`,
   },
 ];
 

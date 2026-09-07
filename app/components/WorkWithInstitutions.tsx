@@ -7,7 +7,7 @@ const cards = [
       "Charlas, talleres y programas para el bienestar psicológico de equipos.",
   },
   {
-    image: "/img/centros_educativos.jpg",
+    image: "/img/fondo_hero_2.png",
     overlay: "rgba(42,74,104,0.62)",
     title: "Centros educativos",
     description:
